@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="testJs.js"></script>
+
+</head>
+<body>
+<p id="key"></p>
+<script>
+    var dictData = {url:'https://www.toutiao.com/c/user/token/MS4wLjABAAAAjtBwvR3OD0QmhA9w_LoIHcbufaw2GM6-i2fNvseUEL0/?source=m_redirect'};
+
+    var keys = window.byted_acrawler.sign(dictData);
+
+    document.getElementById("key").innerHTML = keys;
+</script>
+</body>
+</html>
